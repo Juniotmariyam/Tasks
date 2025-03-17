@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fix "Our Top 5 Sandwich Recipes" at the top */
+        #recipes-title {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: green;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 32px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        /* Add margin to body to prevent content from being hidden behind the fixed title */
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sandwich Delights</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Submit Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Fixed Title -->
+<div id="recipes-title">Our Top 5 Sandwich Recipes</div>
+
+<!-- Recipe Section -->
+<div class="container mt-5" id="recipes">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/grilled.jpg" class="card-img-top" alt="Classic Grilled Cheese">
+                <div class="card-body">
+                    <h3 class="card-title">Classic Grilled Cheese</h3>
+                    <p><strong>Ingredients:</strong> Bread, butter, cheese</p>
+                    <p><strong>Instructions:</strong> Butter bread, add cheese, grill until golden.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/blt.jpg" class="card-img-top" alt="BLT Sandwich">
+                <div class="card-body">
+                    <h3 class="card-title">BLT Sandwich</h3>
+                    <p><strong>Ingredients:</strong> Bacon, lettuce, tomato, mayo, bread</p>
+                    <p><strong>Instructions:</strong> Cook bacon, assemble with veggies and mayo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/egg.jpg" class="card-img-top" alt="Egg Salad Sandwich">
+                <div class="card-body">
+                    <h3 class="card-title">Egg Salad Sandwich</h3>
+                    <p><strong>Ingredients:</strong> Eggs, mayo, mustard, bread</p>
+                    <p><strong>Instructions:</strong> Mix eggs with mayo and mustard, spread on bread.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Categories Section -->
+<div class="container mt-5" id="categories">
+    <h2 class="text-center mb-4">Recipe Categories</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Breakfast Sandwiches</li>
+        <li class="list-group-item">Lunch Classics</li>
+        <li class="list-group-item">Vegetarian Options</li>
+        <li class="list-group-item">International Flavors</li>
+        <li class="list-group-item">Dessert Sandwiches</li>
+    </ul>
+</div>
+<!-- Contact Section -->
+<div class="container mt-5" id="contact">
+    <h2 class="text-center mb-4">Submit Your Recipe</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+            <label for="recipe" class="form-label">Recipe Details</label>
+            <textarea class="form-control" id="recipe" rows="4" placeholder="Share your sandwich recipe"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit Recipe</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-3 mt-5">
+    <p>Contact us at: support@sandwichdelights.com</p>
+    <a href="#" class="text-white me-3">Instagram</a>
+    <a href="#" class="text-white me-3">Facebook</a>
+    <a href="#" class="text-white">Twitter</a>
+</footer>
+
+

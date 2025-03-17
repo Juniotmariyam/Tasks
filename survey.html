@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Interest Survey</title>
+</head>
+<body>
+    <h1>Computer Science Interest Survey</h1>
+    <form action="/submit" method="post">
+        
+        <!-- Text Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Radio Buttons -->
+        <p>What is your current level of study?</p>
+        <input type="radio" id="undergrad" name="study_level" value="Undergraduate">
+        <label for="undergrad">Undergraduate</label>
+        <input type="radio" id="postgrad" name="study_level" value="Postgraduate">
+        <label for="postgrad">Postgraduate</label>
+        <input type="radio" id="phd" name="study_level" value="PhD">
+        <label for="phd">PhD</label><br><br>
+        
+        <!-- Checkboxes -->
+        <p>Which computer science subjects interest you the most?</p>
+        <input type="checkbox" id="ai" name="subjects" value="Artificial Intelligence">
+        <label for="ai">Artificial Intelligence</label>
+        <input type="checkbox" id="webdev" name="subjects" value="Web Development">
+        <label for="webdev">Web Development</label>
+        <input type="checkbox" id="datasci" name="subjects" value="Data Science">
+        <label for="datasci">Data Science</label>
+        <input type="checkbox" id="cybersec" name="subjects" value="Cybersecurity">
+        <label for="cybersec">Cybersecurity</label>
+        <input type="checkbox" id="ml" name="subjects" value="Machine Learning">
+        <label for="ml">Machine Learning</label><br><br>
+        
+        <!-- Select Dropdown -->
+        <label for="career">What is your career goal in CS?</label>
+        <select id="career" name="career">
+            <option value="">Select your goal</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="Researcher">Researcher</option>
+            <option value="Entrepreneur">Entrepreneur</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        
+        <!-- Textarea -->
+        <label for="comments">What motivates your interest in computer science?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
